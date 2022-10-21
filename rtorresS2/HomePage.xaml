@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rtorresS2.HomePage">
+    <ContentPage.Content>
+        <StackLayout Padding="30">
+            <Label x:Name="lblUsuario" Text="" HorizontalTextAlignment="End" FontSize="13"/>
+            
+            
+            <Label Text="Calificaciones Universidad  " FontSize="29" HorizontalTextAlignment="Center" FontAttributes="Bold" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand" />
+            <Label Text="Calcular Nota Momento 1" FontSize="25" TextColor="Gray" FontAttributes="Bold"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="txtNotaMomento1" Placeholder="Nota Momento 1" Keyboard="Numeric" TextChanged="txt_TextChanged" ></Entry>
+            <Entry x:Name="txtNotaExamenMomento1" Placeholder=" Examen Momento 1" Keyboard="Numeric" TextChanged="txt_TextChanged" ></Entry>
+            <Entry x:Name="txtNotaParcialMomento1" Placeholder="Nota Parcial Momento 1" Keyboard="Numeric" IsEnabled="False" ></Entry>
+            <Button x:Name="btnParcial1" Text="Calcular " FontAttributes="Bold" TextColor="White" Clicked="btnCalcular_Clicked" BackgroundColor="Black" ></Button>
+
+            <Label Text="Calcular Nota Momento 2" FontSize="25" TextColor="Gray" FontAttributes="Bold"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="txtNotaMomento2" Placeholder="Nota Momento 2" Keyboard="Numeric" TextChanged="txt_TextChanged" ></Entry>
+            <Entry x:Name="txtNotaExamenMomento2" Placeholder="Examen Momento 2" Keyboard="Numeric" TextChanged="txt_TextChanged" ></Entry>
+            <Entry x:Name="txtNotaParcialMomento2" Placeholder="Nota Parcial Momento 2" Keyboard="Numeric" IsEnabled="False" ></Entry>
+            <Button x:Name="btnParcial2" Text="Calcular" FontAttributes="Bold" TextColor="White" Clicked="btnCalcularP2_Clicked" BackgroundColor="Black" ></Button>
+            <Button x:Name="btnproemdio" Text="Promedio" FontAttributes="Bold" TextColor="White" Clicked="btnpromedio_Clicked" BackgroundColor="Black" ></Button>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
